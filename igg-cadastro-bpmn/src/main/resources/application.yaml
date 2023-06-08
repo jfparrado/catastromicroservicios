@@ -1,0 +1,31 @@
+server:
+  port: 28081
+
+spring.datasource:
+  url: jdbc:mysql://127.0.0.1:3306/catastro?useSSL=false&&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+  driver-class-name: com.mysql.cj.jdbc.Driver
+  username: root
+  password: hermana3
+
+camunda.bpm:
+  admin-user:
+    id: demo
+    password: demo
+  database:
+    type: mysql
+
+# Alfresco Server
+alfresco:
+  repository:
+    url: http://127.0.0.1:8080/alfresco
+    user: admin
+    pass: admin
+
+zeebe.client:
+  broker.gatewayAddress: 127.0.0.1:26500
+  security.plaintext: true
+  cloud:
+    region: dsm-1
+    clusterId: a095646d-d2a1-4c99-ac36-5c0f0379b4ef
+    clientId: 8QV8-J2coAlU~.m4XWejjsYSJnp5ev04
+    clientSecret: 0Z9Ljds71jYC7kn7_gjB_3c-cMm46fnxx4HCCi-Cqyb_4xEkY5~w-wifYdLRVmyp
